@@ -1,4 +1,12 @@
 
 export function toggleIndicator(indicator) {
-    indicator.classList.toggle('visible');
+    indicator.style.visibility = 'visible';
+}
+
+export function toggleInput(input) {
+    input.style.visibility = 'visible';
+}
+
+export function toggleGuesses(guessIndicator) {
+    input.style.visibility = 'visible';
 }

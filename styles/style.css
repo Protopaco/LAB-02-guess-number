@@ -33,7 +33,7 @@ body {
 main {
     height: 100%;
     display: grid;
-    grid-template-rows: 200px 100px 50px 100px 200px;
+    grid-template-rows: 200px 100px 50px 100px 200px 100px 600px;
     justify-content: center;
     margin-bottom: calc(var(--footer-height));
     border: 1px solid black;
@@ -123,6 +123,7 @@ input {
     outline: none;
     border: 2px solid black;
     font-size: 2em;
+    visibility: hidden;
 }
 
 .spacer{
@@ -162,7 +163,8 @@ section {
     color: white;
     justify-content: center;
     display: flex;
-    background-color: white;
+    background-color: gray;
+    visibility: hidden;
 }
 
 
@@ -175,6 +177,16 @@ section {
     align-items: flex-end;
 }
 
-.indicators.visible{
-    background-color: gray;
+
+#guessIndicator{
+    height: 150px;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    font-size: 3em;
+    border: 1px solid black;
+    visibility: hidden;
 }
