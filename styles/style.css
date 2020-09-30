@@ -35,6 +35,8 @@ input {
     border-radius: 25%;
     background-color: #492C1D;
     outline: none;
+    color: #8EB8E5;
+
 }
 
 button {
@@ -44,6 +46,14 @@ button {
     width: 100px;
     border-radius: 10%;
     margin-top: 25px;
-    font-size: 1.5em;
+    font-size: 1em;
     outline: none;
+}
+
+#buttonSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 80px;
+    width: 300px;
 }
