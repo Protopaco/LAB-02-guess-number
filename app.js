@@ -100,9 +100,9 @@
 
 const userDisplay = document.getElementById('display');
 const guessDisplay = document.getElementById('guessDisplay');
-
 const userInput = document.getElementById('user-input');
 const userButton = document.getElementById('button');
+const resetButton = document.getElementById('resetButton');
 
 let guessCount = 4;
 let theNumber = returnRandomNumber();
@@ -112,12 +112,12 @@ console.log(theNumber);
 
 
 userButton.addEventListener('click', () => {
-    guessDisplay.textContent = `you have ${guessCount} fucking guesses left`;
-
     theGuess = Number(userInput.value);
     let response = compareNumbers(theNumber, theGuess);
     userInput.value = '';
     guessCount--;
+    guessDisplay.textContent = `you have ${guessCount} fucking guesses left`;
+
     console.log(guessCount);
     gameState = userResponse(userDisplay, response);
     if(gameState === 'won') {
@@ -125,14 +125,30 @@ userButton.addEventListener('click', () => {
         userButton.style.visibility = 'hidden';
         guessDisplay.style.visibility = 'hidden';
         userDisplay.textContent = 'you fucking won';
+        resetButton.style.visibility = 'visible';
     } else if (guessCount === 0) {
         userInput.style.visibility = 'hidden';
         userButton.style.visibility = 'hidden';
         guessDisplay.style.visibility = 'hidden';
-
         userDisplay.textContent = 'you fucking lost';
+        resetButton.style.visibility = 'visible';
+
     }
 })
+
+resetButton.addEventListener('click', resetGame);
+
+function resetGame() {
+    guessCount = 4;
+    theNumber = returnRandomNumber();
+    userInput.style.visibility = 'visible';
+    userButton.style.visibility = 'visible';
+    resetButton.style.visibility = 'hidden';
+    guessDisplay.style.visibility = 'visible';
+    userDisplay.textContent = '';
+    guessDisplay.textContent = `you have ${guessCount} fucking guesses left`;
+
+}
 
 function returnRandomNumber(){
     return Math.floor(Math.random() * 20);
