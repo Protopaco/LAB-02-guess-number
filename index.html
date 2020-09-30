@@ -15,17 +15,19 @@
 <body>
 
     <main>
-        <h1>Guess a number between 0-20</h1>
-        <h2>you have four guesses to get it right</h2>
-        <h3>I fucking hate this project</h3>
-        <br>
-        <span class="space"></span>
-        <input id="user-input" type="number" />
-        <span class="space"></span>
-        <button id="button">guess</button>
-        <div id="display"></div>
-        <div id="guessDisplay"></div>
-        <button id="resetButton">play again</button>
+        <section>
+            <img src='./assets/qmark.png' id='qmark'>
+            <div class="userInterface">Guess a number between 0-20</div>
+            <div class="userInterface">you have 4 guesses</div>
+            <br>
+            <span class="space"></span>
+            <input id="user-input" type="number" min=0 max=20>
+            <span class="space"></span>
+            <button id="button">guess</button>
+            <div class="userInterface" id="display"></div>
+            <div class="userInterface" id="guessDisplay"></div>
+            <button id="resetButton">replay</button>
+        </section>
     </main>
 
 

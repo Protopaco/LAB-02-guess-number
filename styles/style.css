@@ -2,3 +2,48 @@
 #resetButton {
     visibility: hidden;
 }
+
+#qmark {
+    height: 250px;
+}
+
+main {
+    background-color: #492C1D;
+    color: #8EB8E5;
+    height: 100%;
+    width: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.userInterface {
+    justify-self: center;
+    font-size: 2em;
+}
+
+input {
+    height: 50px;
+    width: 100px;
+    padding-left: 15px;
+    font-size: 1.5em;
+    border-radius: 25%;
+    background-color: #492C1D;
+    outline: none;
+}
+
+button {
+    background-color: #5B5750;
+    height: 50px;
+    color: #8EB8E5;
+    width: 100px;
+    border-radius: 10%;
+    margin-top: 25px;
+    font-size: 1.5em;
+    outline: none;
+}

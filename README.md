@@ -27,10 +27,10 @@ JavaScript:
 1) returnRandomNumber()*
     * returns a randomNumber between 0-20*
 1) compareNumbers(theGuess, theNumber)*
-    * returns 0 if identical
-    * returns 1 if guess number is too high
-    * returns -1 if guess number is too low
-    * create test of this function
+    * returns 0 if identical*
+    * returns 1 if guess number is too high*
+    * returns -1 if guess number is too low*
+    * create test of this function*
 
 1) resetGame()
-    * allows user to play again
+    * allows user to play again*
