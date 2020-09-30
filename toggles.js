@@ -10,3 +10,7 @@ export function toggleInput(input) {
 export function toggleGuesses(guessIndicator) {
     input.style.visibility = 'visible';
 }
+
+export function toggleButton(button) {
+    input.style.visibility = 'visible';
+}
