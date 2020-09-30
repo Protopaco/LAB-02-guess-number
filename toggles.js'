@@ -1,0 +1,5 @@
+
+export function toggleIndicator(indicator) {
+    console.log(indicator.style.backgroundColor);
+    indicator.classList.toggle('visible');
+}
